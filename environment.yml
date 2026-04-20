@@ -1,0 +1,35 @@
+name: geo_notebook_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  # Jupyter Stack
+  - jupyterlab
+  - notebook
+  - ipywidgets
+  - ipykernel
+  # Core Data Science
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  # Geospatial Stack
+  - geopandas
+  - shapely
+  - pyproj
+  - rasterio
+  - rioxarray
+  - xarray
+  - localtileserver
+  - pystac-client
+  - fiona
+  - requests
+  - geojson
+  - folium
+  - pip
+  - pip:
+      - planetary-computer
+      - leafmap>=0.30.0
+      - ipyvue<1.12.0  # Silently fixes the version conflict
+      - ipyvuetify
